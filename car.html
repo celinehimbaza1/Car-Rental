@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Car</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="container-fluid">
+          <div class="col-4">
+            <img src="./img/logo1.PNG" alt="Logo" style="width:66px;" class="rounded-pill">
+          </div>
+          <!-- <div class="container"> -->
+          <div class="col-3">
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+    
+              <li class="navbar-nav">
+                <a class="nav-link text-white" href="car.html">Car</a>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="ordering.html">Order</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Toyota.html">Toyota</a></li>
+                  <li><a class="dropdown-item" href="#">Mercedes-Benz</a></li>
+                  <li><a class="dropdown-item" href="#">Vokswagen</a></li>
+                  <li><a class="dropdown-item" href="#">Toyota</a></li>
+                  <li><a class="dropdown-item" href="#">KIA</a></li>
+                </ul>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          
+    
+          <div class="col-3">
+            <form class="d-flex">
+              <input class="form-control me-1" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
+    
+          </div>
+          <div class="col-1">
+            <button class="btn btn-warning" id="logoutButton">Logout</button>
+          </div>
+      </nav>
+
+      <div class="container-fluid mt-4">
+
+        <div class="container mt-3">
+            <div id="car" class="tab-pane container">
+                <h1 class="text-center">List of cars</h1> <br>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Car ID</th>
+                            <th>Car Name</th>
+                            <th>Car Type</th>
+                            <th>Transmission</th>
+                            <th>Fuel Type</th>
+                            <th>Seat</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Toyota Hilux GR-S </td>
+                            <td>Pickup Truck</td>
+                            <td>Automatic</td>
+                            <td>Diesel</td>
+                            <td>5 seats</td>
+                            <td>14</td>
+                            <td>70000Rwf/Day</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>TOYOTA RAV4 2020</td>
+                            <td>SUV</td>
+                            <td>Automatic</td>
+                            <td>Hybrid (Petrol & Electric) </td>
+                            <td>5 passengers </td>
+                            <td>20</td>
+                            <td>60000Rwf/Day</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>TOYOTA RAV4 2020</td>
+                            <td>SUV</td>
+                            <td>Automatic</td>
+                            <td>Hybrid (Petrol & Electric) </td>
+                            <td>5 passengers </td>
+                            <td>20</td>
+                            <td>60000Rwf/Day</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <a href="#" id="createcarLink" class="btn btn-success"> Add New Car</a>
+                <div id="carForm" class="mt-4" style="display: none;">
+                    <form>
+                        <div class="mb-3 mt-3">
+                            <label for="cardid">Car ID:</label>
+                            <input type="car-id" class="form-control" id="car-id"
+                                placeholder="Enter your car ID" name="car Id">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cname">Car Name:</label>
+                            <input type="cname" class="form-control" id="cname" placeholder="Enter your car name"
+                                name="car name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="carType">Car Type:</label>
+                            <input type="cType" class="form-control" id="cType" placeholder="Enter your car type"
+                                name="car name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Transmission">Transmission:</label>
+                            
+                            <input type="transmission" class="form-control" id="transmission" placeholder="Enter your car transmission"
+                            name="Transmission">
+                              </div>
+
+                            
+                       
+                        <div class="mb-3">
+                            <label for="Fuel Type">Fuel Type:</label>
+                            <input type="Fuel Typel" class="form-control" id="Fuel Type"
+                                placeholder="Enter  car Fuel Type" name="Fuel Type">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Seat">Seat:</label>
+                            <input type="Seat" class="form-control" id="Seat"
+                                placeholder="Enter seat number" name="Seat">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Quantity">Quantity:</label>
+                            <input type="Quantity" class="form-control" id="Quantity"
+                                placeholder="Enter Quantity available" name="Quantity">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Price">Price:</label>
+                            <input type="Price" class="form-control" id="Price"
+                                placeholder="Enter price per day" name="Price">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <!-- JavaScript to toggle the form visibility -->
+                <script>
+                    document.getElementById('createcarLink').addEventListener('click', function (event) {
+                        event.preventDefault(); // Prevents the default anchor behavior
+                        var form = document.getElementById('carForm');
+                        if (form.style.display === 'none') {
+                            form.style.display = 'block'; // Show the form
+                        } else {
+                            form.style.display = 'none'; // Hide the form if already visible
+                        }
+                    });
+                </script>
+            </div>
+
+
+        </div> <br>
+
+
+       
+
+    </div>
+
+   
+
+
+
+
+</body>
+
+</html>
